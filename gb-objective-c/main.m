@@ -3,22 +3,49 @@
 
 //1. Создать калькулятор на основе практической задачи 3.
 //2. Улучшить калькулятор благодаря выводу результата, а также переменных в консоль одной строкой (как в практической задаче 2)
-void calculatorFunction() {
-    // Создаем переменную char до записи ввода с консоли
-    char inputExpression[100];
-    
-    // Записываем введенное выражение
-    NSLog(@"Введите выражение для расчета:");
-    scanf("%s", inputExpression);
+void sumFunc(int first, int second) {
+    NSLog(@"Результат: %d", first + second);
+}
 
-    // Переводим в NSString
-    NSString *stringExpression = [NSString stringWithFormat:@"%s", inputExpression];
-    // Переводим в NSExpression
-    NSExpression *expression = [NSExpression expressionWithFormat: stringExpression];
-    // Производим расчет
-    NSNumber *result = [expression expressionValueWithObject:nil context:nil];
+void substractionFunc(int first, int second) {
+    NSLog(@"Результат: %d", first - second);
+}
+
+void multiplicationFunc(int first, int second) {
+    NSLog(@"Результат: %d", first * second);
+}
+
+void divisionFunc(int first, int second) {
+    NSLog(@"Результат: %d", first / second);
+}
+
+
+void calculatorFunction() {
+    int first = 0;
+    int second = 0;
+    int operator = 0;
+  
+    printf("Введите первое число: ");
+    scanf("%d", &first);
     
-    NSLog(@"Результат: %@", result);
+    printf("Введите второе число: ");
+    scanf("%d", &second);
+    
+    printf("Введите оператор (1 для +, 2 для -, 3 для *, 4 для /): ");
+    scanf("%d", &operator);
+
+    if (operator == 1) {
+        sumFunc(first, second);
+    }
+    else if (operator == 2) {
+        substractionFunc(first, second);
+    }
+    else if (operator == 3) {
+        multiplicationFunc(first, second);
+    }
+    else if (operator == 4) {
+        divisionFunc(first, second);
+    }
 }
 
 //3. *Создать приложение, которое будет вычислять среднее число из трех переменных без применения специальных функций.
