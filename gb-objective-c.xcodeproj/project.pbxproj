@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E3EBE0025C1CBDB00B6C6F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3EBDFF25C1CBDB00B6C6F6 /* main.m */; };
+		5E4785DE25C53F7B0084B758 /* homework-2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4785DD25C53F7B0084B758 /* homework-2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		5E3EBDFC25C1CBDB00B6C6F6 /* gb-objective-c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "gb-objective-c"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3EBDFF25C1CBDB00B6C6F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E4785DD25C53F7B0084B758 /* homework-2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "homework-2.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		5E3EBDFE25C1CBDB00B6C6F6 /* gb-objective-c */ = {
 			isa = PBXGroup;
 			children = (
+				5E4785DD25C53F7B0084B758 /* homework-2.m */,
 				5E3EBDFF25C1CBDB00B6C6F6 /* main.m */,
 			);
 			path = "gb-objective-c";
@@ -118,6 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4785DE25C53F7B0084B758 /* homework-2.m in Sources */,
 				5E3EBE0025C1CBDB00B6C6F6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

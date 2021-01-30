@@ -1,5 +1,6 @@
 
 #import <Foundation/Foundation.h>
+#import "homework-2.m"
 
 //1. Создать калькулятор на основе практической задачи 3.
 //2. Улучшить калькулятор благодаря выводу результата, а также переменных в консоль одной строкой (как в практической задаче 2)
@@ -18,7 +19,6 @@ void multiplicationFunc(int first, int second) {
 void divisionFunc(int first, int second) {
     NSLog(@"Результат: %d", first / second);
 }
-
 
 void calculatorFunction() {
     int first = 0;
