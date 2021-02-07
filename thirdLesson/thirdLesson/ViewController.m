@@ -22,40 +22,40 @@ typedef enum CalculationMethod CalculationMethod;
 
 
 
-- (CGFloat)additionOperation: (int)value1 with:(int)value2 {
+- (CGFloat)additionOperation: (NSInteger)value1 with:(NSInteger)value2 {
     CGFloat result = value1 + value2;
     return result;
 }
 
-- (CGFloat)substractionOperation: (int)value1 with:(int)value2 {
+- (CGFloat)substractionOperation: (NSInteger)value1 with:(NSInteger)value2 {
     CGFloat result = value1 - value2;
     return result;
 }
 
-- (CGFloat)multiplicationOperation: (int)value1 with:(int)value2 {
+- (CGFloat)multiplicationOperation: (NSInteger)value1 with:(NSInteger)value2 {
     CGFloat result = value1*value2;
     return result;
 }
 
-- (CGFloat)divisionOperation: (int)value1 with:(int)value2 {
+- (CGFloat)divisionOperation: (NSInteger)value1 with:(NSInteger)value2 {
     CGFloat result = value1/value2;
     return result;
 }
 
 
 - (CGFloat)calculate: (CalculationMethod)method with:(CGFloat)value1 and:(CGFloat)value2 {
-    
-    if (method == Addition) {
-        return [self additionOperation: value1 with: value2];
-    } else if (method == Substraction) {
-        return [self substractionOperation: value1 with: value2];
-    } else if (method == Division){
-        return [self divisionOperation: value1 with: value2];
-    } else if (method == Multipliation) {
-        return [self multiplicationOperation: value1 with: value2];
+    switch (method) {
+        case Addition:
+            return [self additionOperation: value1 with: value2];
+        case Substraction:
+            return [self substractionOperation: value1 with: value2];
+        case Division:
+            return [self divisionOperation: value1 with: value2];
+        case Multipliation:
+            return [self multiplicationOperation: value1 with: value2];
+        default:
+            return 0;
     }
-    
-    return 0;
 }
 
 //    3. *Создать приложение, которое будет добавлять и выводить список пользователей, которые были добавлены путем введения имени в консоль (scanf). Все имена необходимо хранить в структуре пользователя.
