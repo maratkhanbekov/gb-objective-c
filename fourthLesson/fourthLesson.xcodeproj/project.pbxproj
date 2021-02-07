@@ -12,6 +12,7 @@
 		5E56B5B125CFE47C00F3F76C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E56B5B025CFE47C00F3F76C /* Assets.xcassets */; };
 		5E56B5B425CFE47C00F3F76C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E56B5B225CFE47C00F3F76C /* Main.storyboard */; };
 		5E56B5B725CFE47C00F3F76C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E56B5B625CFE47C00F3F76C /* main.m */; };
+		5E56B5C125CFE51E00F3F76C /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E56B5C025CFE51E00F3F76C /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		5E56B5B525CFE47C00F3F76C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E56B5B625CFE47C00F3F76C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E56B5B825CFE47C00F3F76C /* fourthLesson.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fourthLesson.entitlements; sourceTree = "<group>"; };
+		5E56B5BF25CFE51E00F3F76C /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		5E56B5C025CFE51E00F3F76C /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				5E56B5B525CFE47C00F3F76C /* Info.plist */,
 				5E56B5B625CFE47C00F3F76C /* main.m */,
 				5E56B5B825CFE47C00F3F76C /* fourthLesson.entitlements */,
+				5E56B5BF25CFE51E00F3F76C /* Student.h */,
+				5E56B5C025CFE51E00F3F76C /* Student.m */,
 			);
 			path = fourthLesson;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				5E56B5AF25CFE47B00F3F76C /* ViewController.m in Sources */,
 				5E56B5B725CFE47C00F3F76C /* main.m in Sources */,
 				5E56B5AC25CFE47B00F3F76C /* AppDelegate.m in Sources */,
+				5E56B5C125CFE51E00F3F76C /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
